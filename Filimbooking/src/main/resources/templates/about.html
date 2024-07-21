@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Home</title>
+<link rel="stylesheet" href="#" th:href="@{/css/bootstrap.css}" />
+<link rel="stylesheet" href="#" th:href="@{/css/all.css}" />
+<link rel="stylesheet" href="#" th:href="@{/css/index.css}" />
+</head>
+<body>
+
+	<div class="container base">
+		<div class="row base-row">
+			<div class="col-3 menu">
+			<div class="logo mb-5 text-center text-light bg-dark pt-1 pb-1">
+			<h4>Inamkes Gold Theatre</h4>
+			</div>
+				<ul class="list">
+					<li><a th:href="@{/}"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li>
+					<li><a th:href="@{/register}"><i class="fas fa-user-plus"></i>&nbsp;&nbsp;Register</a></li>
+					<li><a th:classappend="${menu == 'login'} ? 'text-dark' : ' '" th:href="@{/loginForm}"><i class="fas fa-users"></i>&nbsp;&nbsp;Login</a></li>
+					<li><a th:href="@{/about}"><i class="fas fa-address-card"></i>&nbsp;&nbsp;About us</a></li>
+					<li><a th:href="@{/contact}"><i class="fas fa-phone-square-alt"></i>&nbsp;&nbsp;Contact us</a></li>
+				</ul>
+			</div>
+	  	<div class="col-9 login-form">
+					<div class="login">
+				<div class="login-head">
+						<h3>About Us</h3>
+						</div>
+						
+						<div class="form-group">
+							<p>Established in 1987, Inmakes Gold Group which is now a leading business brand with multiple business verticals including Pipes & Fittings, Stationery & Infra-Development. 
+							<p>In the year 2010 Inmakes Gold Group ventured into producing movies & later ventured in Cinema Exhibition business in the year 2012.
+							<p>'Inmakes Gold Cinemas' screen count has multiplied immensely and we proudly own 176 screens across 43 cities and 15 states in India. By the end of 2022, we aim to have 200+ screens.
+						</div>
+						
+					</div> 
+
+
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
